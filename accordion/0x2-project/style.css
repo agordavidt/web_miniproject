@@ -32,7 +32,7 @@ body {
     display: block;
     text-align: left;
     width: 100%;
-    padding: 1em 0;
+    padding: 1rem;
     color: #7288a2;
     font-size: 1.15rem;
     font-weight: 400;
@@ -60,6 +60,7 @@ body {
     height: 22px;
     border: 1px solid;
     border-radius: 22px;
+	margin-right: 1em;
 }
 .accordion button .icon::before {
     display: block;
