@@ -81,6 +81,12 @@ img{
 .sign .grid .up {
     grid-template-columns: 45% 55%;
 }
+.sign-text {
+    animation: slideInFromLeft 1s ease-in;
+}
+.up1 .sign-text {
+    animation: slideInFromRight 1s ease-in;
+}
 .sign-form  {
     position: relative;
     top: 60px;
@@ -88,9 +94,11 @@ img{
     width: 400px;
     padding: 40px;
     z-index: 100;
+    animation: slideInFromRight 1s ease-in;
 }
 .up .sign-form {
     height: 450px;
+    animation: slideInFromLeft 1s ease-in;
 }
 .sign-form .form-control{
     margin: 30px 0;
@@ -168,6 +176,42 @@ img{
     margin: 0 10px;
 }
 
+/** Animations **/
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 
 
@@ -203,10 +247,18 @@ img{
     .sign-text {
         text-align: center;
         margin-top: 40px;
+        animation: slideInFromTop 1s ease-in;
+    }
+    .up1 .sign-text{
+        animation: slideInFromBottom 1s ease-in;
     }
     .sign-form {
         justify-self: center;
         margin: auto;
+        animation: slideInFromBottom 1s ease-in;
+    }
+    .up1 .sign-form {
+        animation: slideInFromTop 1s ease-in;
     }
 }
 
