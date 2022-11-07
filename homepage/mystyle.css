@@ -121,6 +121,56 @@ img{
     -moz-transform: skewY(3deg);
     -ms-transform: skewY(3deg);
 }
+/*** About Styling ****/
+.about-sub-head img{
+    width: 100%;
+    justify-self: flex-end;
+}
+
+
+
+
+
+
+
+
+
+/** Tablets and under **/
+@media(max-width: 768px) {
+    .grid,
+    .sign .grid,
+    .stats .grid {
+        grid-template-columns: 1fr;
+    }
+    .sign {
+        height: auto;
+    }
+    .sign-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .sign-form {
+        justify-self: center;
+        margin: auto;
+    }
+}
+
+/** Mobile **/
+@media(max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+    .navbar ul {
+        padding: 10px;
+        background: rgba(0,0,0,0.1);
+    }
+    
+}
+
 
 /*** Utilities ***/
 .container {
@@ -143,6 +193,28 @@ img{
     align-items: center;
     height: 100%;
 }
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Margin */
+.my-1 {
+    margin: 1rem 0;
+}
+.my-2 {
+    margin: 1.5rem 0;
+}
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+
+
+
+
 .card {
     background: #fff;
     color: #333;
@@ -167,4 +239,16 @@ img{
 .btn:hover {
     transform: scale(0.95);
 }
+
+.bg-dark,
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+.bg-light,
+.btn-light {
+    background: var(--light-color);
+    color: #333;
+}
+
 
