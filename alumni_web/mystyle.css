@@ -182,9 +182,6 @@ img{
    width: 50%;
     margin: 50px auto;
 }
-.contact h1{    
-    color: whitesmoke;
-}
 .contact input, .contact textarea{
     width: 100%;
     padding: 15px;
@@ -195,13 +192,13 @@ img{
 }
 /*** FAQs *****/
 .FAQ {
+    display: flex;
     margin: 50px auto;
-    /* padding: 4rem;
-    width: 48rem; */
-    overflow: hidden;
+    
 }
 .accordion .accordion-item {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 3px solid #e5e5e5;
+    overflow: hidden;
 }
 .accordion .accordion-item button[aria-expanded='true'] {
     border-bottom: 1px solid var(--primary-color);
@@ -469,7 +466,7 @@ img{
     padding: 3rem 0;
 }
 .py-5 {
-    padding: 4rem 0;
+    padding: 4rem;
 }
 .p-1 {
     margin: 1rem;
@@ -571,3 +568,7 @@ img{
     font-size: 4rem;
 }
 
+.link {
+    border-bottom: 1px solid #fff;
+    color: var(--primary-color);
+}
