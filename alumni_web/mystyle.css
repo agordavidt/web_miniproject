@@ -206,30 +206,6 @@ img{
     color: var(--secondary-color);
   }
   
-  /* .executives .slide .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 1rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  
-  .executives .slide .content h3 {
-    font-size: 2rem;
-    text-transform: capitalize;
-    color: #444;
-  }
-  
-  .executives .slide .content span {
-    font-size: 1.5rem;
-    line-height: 2;
-    color: #777;
-  } */
   
     
 
@@ -352,6 +328,86 @@ img{
     font-weight: 300;
     margin: 2em 0;
 }
+
+/*--Member Profile Page--*/
+#profile{
+    width: 100%;
+    padding: 70px 0;
+}
+.title_text{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.title_text h1{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.profile-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+}
+.profiles{
+    flex-basis: 50%;
+}
+.profiles-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.profiles-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.profiles h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    ;color: var(--primary-color);
+}
+.profiles-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.profiles-icon img{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.profiles-text p{
+    padding: 0 20px;
+    text-align: initial;
+}
+
+@media screen and (max-width: 770px){
+    .title_text h1{
+        font-size: 35px;
+    }
+    .profiles{
+        flex-basis: 100%;
+    }
+    .profiles-img{
+        flex-basis: 100%;
+    }
+    .profiles-img img{
+        width: 100%;
+        
+    }
+}
+
+
+
+
+
 
 /** footer ***/
 .footer .socials a {
@@ -490,69 +546,29 @@ img{
 }
 
 /* Margin */
-.my-1 {
-    margin: 1rem 0;
-}
-.my-2 {
-    margin: 1.5rem 0;
-}
-.my-3 {
-    margin: 2rem 0;
-}
-.my-4 {
-    margin: 3rem 0;
-}
-.my-5 {
-    margin: 4rem 0;
-}
-.m-1 {
-    margin: 1rem;
-}
-.m-2 {
-    margin: 1.5rem;
-}
-.m-3 {
-    margin: 2rem;
-}
-.m-4 {
-    margin: 3rem;
-}
-.m-5 {
-    margin: 4rem;
-}
+.my-1 {margin: 1rem 0;}
+.my-2 {margin: 1.5rem 0;}
+.my-3 {margin: 2rem 0;}
+.my-4 {margin: 3rem 0;}
+.my-5 {margin: 4rem 0;}
+.m-1 {margin: 1rem;}
+.m-2 {margin: 1.5rem;}
+.m-3 {margin: 2rem;}
+.m-4 {margin: 3rem;}
+.m-5 {margin: 4rem;}
 
 
 /* Padding */
-.py-1 {
-    padding: 1rem 0;
-}
-.py-2 {
-    padding: 1.5rem 0;
-}
-.py-3 {
-    padding: 2rem 0;
-}
-.py-4 {
-    padding: 3rem 0;
-}
-.py-5 {
-    padding: 4rem;
-}
-.p-1 {
-    margin: 1rem;
-}
-.p-2 {
-    margin: 1.5rem;
-}
-.p-3 {
-    margin: 2rem;
-}
-.p-4 {
-    margin: 3rem;
-}
-.p-5 {
-    margin: 4rem;
-}
+.py-1 {padding: 1rem 0;}
+.py-2 {padding: 1.5rem 0;}
+.py-3 {padding: 2rem 0;}
+.py-4 {padding: 3rem 0;}
+.py-5 {padding: 4rem;}
+.p-1 {margin: 1rem;}
+.p-2 {margin: 1.5rem;}
+.p-3 {margin: 2rem;}
+.p-4 {margin: 3rem;}
+.p-5 {margin: 4rem;}
 
 .card {
     background: #fff;
