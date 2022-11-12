@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FEDVOSA | About Us </title>
 
@@ -79,13 +81,12 @@
 
 <!-- executives section starts  -->
 
-<section class="teachers">
-    <div class="container">
-    
+<section class="executives">
+    <div class="container">    
 
-    <h1 class="heading">expert teachers</h1>
+    <h1 class="heading">Meet Our Executives</h1>
  
-    <div class="swiper teachers-slider">
+    <div class="swiper swiper mySwiper">
  
        <div class="swiper-wrapper">
  
@@ -178,8 +179,54 @@
                 <span>expert tutor</span>
              </div>
           </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/ddavid.png" alt="">
+               <div class="share">
+                   <a href="#"><i class="fab fa-whatsapp fa-1x"></i></a>
+                   <a href="#"><i class="fab fa-facebook fa-1x"></i></a>
+                   <a href="#"><i class="fab fa-linkedin fa-1x"></i></a>  
+               </div>
+            </div>
+            <div class="content">
+               <h3>john deo</h3>
+               <span>expert tutor</span>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/ddavid.png" alt="">
+               <div class="share">
+                   <a href="#"><i class="fab fa-whatsapp fa-1x"></i></a>
+                   <a href="#"><i class="fab fa-facebook fa-1x"></i></a>
+                   <a href="#"><i class="fab fa-linkedin fa-1x"></i></a>  
+               </div>
+            </div>
+            <div class="content">
+               <h3>john deo</h3>
+               <span>expert tutor</span>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/ddavid.png" alt="">
+               <div class="share">
+                   <a href="#"><i class="fab fa-whatsapp fa-1x"></i></a>
+                   <a href="#"><i class="fab fa-facebook fa-1x"></i></a>
+                   <a href="#"><i class="fab fa-linkedin fa-1x"></i></a>                    
+               </div>
+            </div>
+            <div class="content">
+               <h3>john deo</h3>
+               <span>expert tutor</span>
+            </div>
+         </div>
           
        </div>
+       <div class="swiper-pagination"></div>
  
     </div>
         
@@ -212,28 +259,19 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- swiperjs.com -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".teachers-slider", {
-        loop:true,
-        grabCursor:true,
-        spaceBetween: 20,
-        breakpoints: {
-            0: {
-            slidesPerView: 1,
-            },
-            768: {
-            slidesPerView: 2,
-            },
-            991: {
-            slidesPerView: 3,
-            },
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
-        });
-
-
-
+      });
     </script>
     
 </body>

@@ -164,30 +164,30 @@ img{
 }
 
 /*** Executives section of about page *****/
-.teachers .slide {
+.executives .slide {
     text-align: center;
     width: 20rem;
   }
   
-  .teachers .slide:hover .image img {
+  .executives .slide:hover .image img {
     background: var(--secondary-color);
   }
   
-  .teachers .slide:hover .image .share {
+  .executives .slide:hover .image .share {
     bottom: 0;
   }
   
-  .teachers .slide .image {
+  .executives .slide .image {
     position: relative;
     overflow: hidden;
   }
   
-  .teachers .slide .image img {
+  .executives .slide .image img {
     background: #f0fdfa;
     width: 100%;
   }
   
-  .teachers .slide .image .share {
+  .executives .slide .image .share {
     position: absolute;
     bottom: -10rem;
     left: 0;
@@ -196,17 +196,17 @@ img{
     padding: 2rem;
   }
   
-  .teachers .slide .image .share a {
-    font-size: 3rem;
+  .executives .slide .image .share a {
+    font-size: 2rem;
     margin: 0 1rem;
     color: #fff;
   }
   
-  .teachers .slide .image .share a:hover {
+  .executives .slide .image .share a:hover {
     color: var(--secondary-color);
   }
   
-  .teachers .slide .content {
+  /* .executives .slide .content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -219,17 +219,17 @@ img{
             justify-content: space-between;
   }
   
-  .teachers .slide .content h3 {
+  .executives .slide .content h3 {
     font-size: 2rem;
     text-transform: capitalize;
     color: #444;
   }
   
-  .teachers .slide .content span {
+  .executives .slide .content span {
     font-size: 1.5rem;
     line-height: 2;
     color: #777;
-  }
+  } */
   
     
 
